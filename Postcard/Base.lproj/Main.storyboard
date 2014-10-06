@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2qp-91-FGj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RZD-SH-0C9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="3hM-Z8-ugZ">
@@ -103,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KMf-KE-Vr6"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8W-1o-NG3">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="170" width="209" height="42"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="HdT-6a-VnO"/>
                                 <exclude reference="fDZ-mQ-1su"/>
                                 <exclude reference="xa2-Vx-0FQ"/>
+                                <exclude reference="h8W-1o-NG3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +132,7 @@
                                 <include reference="HdT-6a-VnO"/>
                                 <include reference="fDZ-mQ-1su"/>
                                 <include reference="xa2-Vx-0FQ"/>
+                                <include reference="h8W-1o-NG3"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="HdT-6a-VnO" id="xkO-dx-z30"/>
                         <outlet property="mailButton" destination="xa2-Vx-0FQ" id="Iql-tW-Lgo"/>
                         <outlet property="messageLabel" destination="W5j-zr-t0t" id="4Hs-fD-OZa"/>
+                        <outlet property="nameLabel" destination="h8W-1o-NG3" id="K5f-uM-mMD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
